@@ -1,0 +1,156 @@
+ p{
+    text-align: center;
+    padding: 10px;
+    margin: 20px auto;
+    font-size: 20px;
+    font-weight: 100;
+    font-family:'Times New Roman', Times, serif;
+    
+}
+
+.container{
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    padding: 25px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    background-color: lightpink;
+
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.box h3 {
+    margin-bottom: 15px;
+}
+
+
+.box ul {
+    padding-left: 20px;
+}
+
+.box:hover{
+    transform: translateY(-5px);
+}
+
+
+ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 45px;
+}
+
+h2{
+    text-align: left;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+
+.slider {
+    position: relative;
+    max-width: 300px;
+    overflow: hidden;
+    margin: 30px O;
+    border-radius: 15px;
+    border: 3px solid lightpink;
+}
+
+.slider input {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.slides img {
+    height: auto;
+    min-width: 100%;
+    object-fit: contain;
+}
+
+/* posuny */
+#s1:checked ~ .slides { transform: translateX(0); }
+#s2:checked ~ .slides { transform: translateX(-100%); }
+#s3:checked ~ .slides { transform: translateX(-200%); }
+#s4:checked ~ .slides { transform: translateX(-300%); }
+
+/* šipky */
+.arrows label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    display: none;
+}
+
+#s1:checked ~ .arrows .s1,
+#s2:checked ~ .arrows .s2,
+#s3:checked ~ .arrows .s3,
+#s4:checked ~ .arrows .s4 {
+    display: block;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.dots {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.dots label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: white;
+    margin: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.whoIAm {
+    flex: 1;
+}
+
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
