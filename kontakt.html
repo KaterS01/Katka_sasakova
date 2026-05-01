@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kontakt</title>
+</head>
+<body>
+
+    <header>
+        <h2 class="comunication">Kontakt</h2>
+
+    <nav class="menu">
+        <a href="index.html" class="btn">Hlavní strana</a>
+        <a href="myself.html" class="btn">Můj svět a příběh</a>
+        <a href="work.html" class="btn">Moje práce a digitální projekty</a>
+    </nav>
+
+    </header>
+
+    <main>
+        <form action="https://api.web3forms.com/submit" method="POST">
+
+        <input type="hidden" name="access_key" value="abeb2754-5441-4f2b-9374-3e41eb836b0e">
+
+        <label>Typ dotazu:</label>
+        <select name="typ">
+            <option>Spolupráce</option>
+            <option>Dotaz</option>
+            <option>Jiné</option>
+        </select>
+
+        <label>Jméno:</label>
+        <input type="text" name="name" required>
+
+        <label>Email:</label>
+        <input type="email" name="email" required>
+
+
+
+        <label>Zpráva:</label>
+        <textarea name="message" required></textarea>
+
+        <button type="submit">Odeslat</button>
+
+    </form>
+    
+    </main>
+
+ <footer>
+    <p>@Kateřina Sasáková 2026</p>
+</footer>
+    
+
+
+
+    
+</body>
+</html>

@@ -1,3 +1,9 @@
+ body{
+    background-color: lightgray;
+    max-width: 900px;
+    margin: auto;
+ }
+ 
  p{
     text-align: center;
     padding: 10px;
@@ -58,20 +64,55 @@ h1{
     text-align: center;
     text-decoration: underline;
     font-size: 45px;
+    color: palevioletred;
 }
 
 h2{
-    text-align: left;
+    text-align: center;
     text-decoration: none;
     font-size: 25px;
 }
+
+.comunication{
+    text-align: center;
+    color: black;
+    font-size: 40px;
+    
+    
+}
+
+
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: palevioletred;
+    color: white;
+    border-radius: 8px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background-color: lightpink;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;   
+    margin-top: 20px;
+    max-width: 100%;
+}
+
 
 
 .slider {
     position: relative;
     max-width: 300px;
     overflow: hidden;
-    margin: 30px O;
+    margin: 30px 0;
     border-radius: 15px;
     border: 3px solid lightpink;
 }
@@ -148,9 +189,53 @@ h2{
     flex: 1;
 }
 
+
+
+/* Kontakty */
+
+
+form{
+    width: 300px;
+    margin: 45px auto 0 auto;
+}
+
+label{
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
 @media (max-width: 700px) {
     .container {
         flex-direction: column;
         align-items: center;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 36px;
+    } 
+
+    .btn {
+        width: 80%;
+        text-align: center;
+    }
+
+    .udaje {
+        flex-direction: column;
+        text-align: center;
     }
 }
