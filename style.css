@@ -11,6 +11,7 @@
     font-size: 20px;
     font-weight: 100;
     font-family:'Times New Roman', Times, serif;
+    white-space: pre-line;
     
 }
 
@@ -212,6 +213,12 @@ input, textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+}
+
+
+/* Příběh stránka*/
+.story{
+    white-space: pre-line;
 }
 
 @media (max-width: 700px) {
